@@ -1,0 +1,22 @@
+/* Flexbox Utilities */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.gap-1 { gap: var(--space-1); }
+/* ... */
+
+/* Grid Utilities */
+.grid { display: grid; }
+.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+/* ... */
+
+/* Spacing Utilities */
+.p-4 { padding: var(--space-4); }
+.m-4 { margin: var(--space-4); }
+/* ... */
+
+/* Animation Utilities */
+.transition-all { transition: all var(--transition-speed) var(--transition-smooth); }
+.hover-scale:hover { transform: scale(1.05); }
+/* ... */

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Kreatif</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Link ke CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="custom-cursor"></div>
+
+    <!-- Header & Navigasi -->
+    <nav id="main-navbar" class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">
+                <span class="gradient-text">Portofolio.</span>
+            </a>
+            
+            <button class="navbar-toggler glass" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+                <button id="theme-switcher" class="theme-btn ms-lg-4">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Bagian Hero -->
+        <section id="hero" class="section-padding">
+            <!-- Add cursor line container -->
+            <div class="cursor-line-container">
+                <div class="cursor-line cursor-line-h"></div>
+                <div class="cursor-line cursor-line-v"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content row align-items-center">
+                    <div class="col-lg-8 hero-text-left">
+                        <h1>
+                            <span class="greeting">Halo,</span>
+                            <span id="text-rotator" class="gradient-text"></span>
+                            <span class="cursor"></span>
+                        </h1>
+                        <p class="animated-text">Seorang developer dan desainer yang passionate dalam menciptakan pengalaman digital yang menakjubkan.</p>
+                    </div>
+                    <!-- Hero CTA button -->
+                    <div class="col-lg-4 hero-button-right text-center">
+                        <a href="#projects" class="btn btn-primary">Lihat Karya Saya</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tentang Saya -->
+        <section id="about" class="section-padding gradient-border">
+            <div class="gradient-top"></div>
+            <div class="container">
+                <h2 class="section-title animated-text">Tentang Saya</h2>
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="glass-card reveal-on-scroll about-card">
+                            <div class="about-header">
+                                <h3 class="mb-4 gradient-text">Pengalaman & Keahlian</h3>
+                                <div class="experience-badge">5+ Tahun</div>
+                            </div>
+                            <p class="mb-4 about-description">Saya adalah seorang pengembang web full-stack dengan pengalaman dalam menciptakan solusi digital yang inovatif dan user-friendly.</p>
+                            <div class="skills-wrapper">
+                                <div class="skill-tag" data-skill="HTML5">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="skill-tag" data-skill="CSS3">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="skill-tag" data-skill="JavaScript">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="skill-tag" data-skill="React">
+                                    <i class="fab fa-react"></i>
+                                    <span>React</span>
+                                </div>
+                                <div class="skill-tag" data-skill="Node.js">
+                                    <i class="fab fa-node-js"></i>
+                                    <span>Node.js</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-image-wrapper parallax" data-speed="0.5">
+                            <div class="image-frame glass-card">
+                                <img src="assets/img/gw3.png" alt="Profile" class="img-fluid rounded-lg">
+                                <div class="frame-decoration"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gradient-bottom"></div>
+        </section>
+
+        <!-- Proyek -->
+        <section id="projects" class="section-padding">
+            <div class="section-header">
+                <h2 class="animated-text text-center">Proyek Terbaru</h2>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                </div>
+            </div>
+            
+            <div id="projects-horizontal" class="projects-container">
+                <div class="project-item-wrapper" data-category="web">
+                    <div class="project-card glass-card">
+                        <div class="project-item" data-intensity="0.2">
+                            <div class="project-images">
+                                <img src="https://images.unsplash.com/photo-1559028006-44a3a2f20975?q=80&w=600&h=800&auto=format&fit=crop" 
+                                     alt="Proyek Desain Web 1">
+                                <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=600&h=800&auto=format&fit=crop" 
+                                     alt="Proyek Desain Web 2" class="hover-image">
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Proyek Desain Web</h3>
+                                    <p class="project-tech">UI/UX, Frontend, GSAP</p>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-link"></i>
+                                            <span>Live Demo</span>
+                                        </a>
+                                        <a href="#" class="project-link">
+                                            <i class="fab fa-github"></i>
+                                            <span>Source Code</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">GSAP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item-wrapper" data-category="mobile">
+                    <div class="project-card glass-card">
+                        <div class="project-item" data-intensity="0.2">
+                            <div class="project-images">
+                                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=600&h=800&auto=format&fit=crop" 
+                                     alt="Proyek Aplikasi Mobile 1">
+                                <img src="https://images.unsplash.com/photo-1580999933938-20d3a4d08484?q=80&w=600&h=800&auto=format&fit=crop" 
+                                     alt="Proyek Aplikasi Mobile 2" class="hover-image">
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Aplikasi Mobile</h3>
+                                    <p class="project-tech">React Native, Firebase</p>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-link"></i>
+                                            <span>Live Demo</span>
+                                        </a>
+                                        <a href="#" class="project-link">
+                                            <i class="fab fa-github"></i>
+                                            <span>Source Code</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item-wrapper" data-category="design">
+                    <div class="project-card glass-card">
+                        <div class="project-item" data-intensity="0.2">
+                            <div class="project-images">
+                                <img src="https://images.unsplash.com/photo-1557825835-b4527f242af7?q=80&w=600&h=800&auto=format&fit=crop" 
+                                     alt="Proyek Branding 1">
+                                <img src="https://images.unsplash.com/photo-1611140339103-3fc53833cb4a?q=80&w=600&h=800&auto=format&fit=crop" 
+                                     alt="Proyek Branding 2" class="hover-image">
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Identitas Branding</h3>
+                                    <p class="project-tech">Desain Grafis, Ilustrasi</p>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-link"></i>
+                                            <span>Live Demo</span>
+                                        </a>
+                                        <a href="#" class="project-link">
+                                            <i class="fab fa-github"></i>
+                                            <span>Source Code</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tech-tag">Desain Grafis</span>
+                            <span class="tech-tag">Ilustrasi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item-wrapper" data-category="ecommerce">
+                    <div class="project-card glass-card">
+                        <div class="project-item" data-intensity="0.2">
+                            <div class="project-images">
+                                <img src="https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?q=80&w=600&h=800&auto=format&fit=crop" 
+                                     alt="Proyek E-commerce 1">
+                                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=600&h=800&auto=format&fit=crop" 
+                                     alt="Proyek E-commerce 2" class="hover-image">
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Toko E-commerce</h3>
+                                    <p class="project-tech">Shopify, Liquid, SEO</p>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-link"></i>
+                                            <span>Live Demo</span>
+                                        </a>
+                                        <a href="#" class="project-link">
+                                            <i class="fab fa-github"></i>
+                                            <span>Source Code</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tech-tag">Shopify</span>
+                            <span class="tech-tag">Liquid</span>
+                            <span class="tech-tag">SEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontak -->
+        <section id="contact" class="section-padding section-card">
+            <div class="container">
+                <div class="contact-wrapper glass-card">
+                    <div class="row">
+                        <div class="col-lg-6 contact-info-col">
+                            <h2 class="section-title mb-4">Mari Terhubung</h2>
+                            <p class="contact-intro animated-text">Punya ide atau proyek? Mari kita wujudkan bersama.</p>
+                            
+                            <div class="contact-info-grid">
+                                <div class="contact-info-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <h4>Lokasi</h4>
+                                        <p>Jakarta, Indonesia</p>
+                                    </div>
+                                </div>
+                                <div class="contact-info-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <h4>Email</h4>
+                                        <p>hello@yourdomain.com</p>
+                                    </div>
+                                </div>
+                                <div class="contact-info-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <h4>Telepon</h4>
+                                        <p>+62 123 456 7890</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="social-links-contact">
+                                <a href="#" class="social-btn" data-tooltip="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-btn" data-tooltip="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="social-btn" data-tooltip="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-btn" data-tooltip="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <form id="contact-form" class="contact-form">
+                                <div class="form-floating mb-4">
+                                    <input type="text" id="name" name="name" class="form-control glass" required>
+                                    <label for="name">Nama Lengkap</label>
+                                    <div class="form-status"></div>
+                                </div>
+                                <div class="form-floating mb-4">
+                                    <input type="email" id="email" name="email" class="form-control glass" required>
+                                    <label for="email">Alamat Email</label>
+                                    <div class="form-status"></div>
+                                </div>
+                                <div class="form-floating mb-4">
+                                    <select id="subject" name="subject" class="form-control glass" required>
+                                        <option value="">Pilih Subjek</option>
+                                        <option value="collaboration">Kolaborasi</option>
+                                        <option value="project">Proyek Baru</option>
+                                        <option value="other">Lainnya</option>
+                                    </select>
+                                    <label for="subject">Subjek</label>
+                                </div>
+                                <div class="form-floating mb-4">
+                                    <textarea id="message" name="message" class="form-control glass" style="height: 150px" required></textarea>
+                                    <label for="message">Pesan Anda</label>
+                                    <div class="form-status"></div>
+                                </div>
+                                <button type="submit" class="btn btn-primary submit-btn">
+                                    <span class="btn-text">Kirim Pesan</span>
+                                    <div class="btn-icon">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </div>
+                                    <div class="btn-loading">
+                                        <div class="spinner-border spinner-border-sm" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="section-padding">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-brand">
+                            <h3 class="gradient-text">Portofolio.</h3>
+                            <p>Menciptakan solusi digital yang inovatif dan menginspirasi.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <h4>Navigasi</h4>
+                        <ul class="footer-links">
+                            <li><a href="#hero">Beranda</a></li>
+                            <li><a href="#about">Tentang</a></li>
+                            <li><a href="#projects">Proyek</a></li>
+                            <li><a href="#contact">Kontak</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4>Layanan</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                            <li><a href="#">Konsultasi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4>Newsletter</h4>
+                        <p>Berlangganan untuk mendapatkan update terbaru</p>
+                        <form class="footer-newsletter">
+                            <div class="input-group">
+                                <input type="email" class="form-control glass" placeholder="Email Anda">
+                                <button class="btn btn-primary" type="submit">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright">© 2025 Aufa Dzakiy. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-social">
+                            <a href="#" class="social-btn" data-tooltip="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-btn" data-tooltip="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-btn" data-tooltip="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-btn" data-tooltip="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Script JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hover-effect@1.1.0/dist/hover-effect.umd.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

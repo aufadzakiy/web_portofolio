@@ -1,0 +1,33 @@
+:root {
+    /* Colors */
+    --colors-primary: {
+        light: #6366f1;
+        dark: #818cf8;
+        rgb: 99, 102, 241;
+    }
+    --colors-accent: {
+        light: #f59e0b;
+        dark: #fbbf24;
+        rgb: 245, 158, 11;
+    }
+    /* ... other color variables ... */
+
+    /* Typography Scale */
+    --font-size: {
+        xs: 0.75rem;
+        sm: 0.875rem;
+        base: 1rem;
+        lg: 1.125rem;
+        xl: 1.25rem;
+        /* ... */
+    }
+
+    /* Spacing Scale */
+    --space: {
+        1: 0.25rem;
+        2: 0.5rem;
+        3: 0.75rem;
+        4: 1rem;
+        /* ... */
+    }
+}

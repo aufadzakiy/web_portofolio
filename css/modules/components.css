@@ -1,0 +1,25 @@
+/* Card Component */
+.card {
+    --padding: var(--space-6);
+    --radius: var(--border-radius-lg);
+    
+    padding: var(--padding);
+    border-radius: var(--radius);
+    background: var(--glass-bg-color);
+    border: 1px solid var(--glass-border-color);
+    transition: var(--transition-all);
+}
+
+/* Button Component */
+.button {
+    --padding-x: var(--space-6);
+    --padding-y: var(--space-3);
+    
+    display: inline-flex;
+    align-items: center;
+    padding: var(--padding-y) var(--padding-x);
+    border-radius: var(--border-radius);
+    transition: var(--transition-all);
+}
+
+/* ... other components ... */
