@@ -40,7 +40,7 @@
                         <a class="nav-link" href="#hero">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Tech Stack</a>
+                        <a class="nav-link" href="#about">Skill</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
@@ -84,91 +84,126 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Hero Divider -->
+            <div class="hero-divider">
+                <div class="hero-divider-content">
+                    <div class="divider-line"></div>
+                    <div class="divider-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="divider-line"></div>
+                </div>
+                <svg class="divider-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id="dividerGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:rgba(226, 232, 240, 0.8)" />
+                            <stop offset="100%" style="stop-color:var(--bg-color)" />
+                        </linearGradient>
+                    </defs>
+                    <path 
+                        fill="url(#dividerGradient)"
+                        fill-opacity="1" 
+                        d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,128C672,128,768,160,864,176C960,192,1056,192,1152,176C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                </svg>
+            </div>
         </section>
 
         <!-- Tech Stack Section -->
         <section id="about" class="section-padding gradient-border">
             <div class="container">
-                <h2 class="section-title animated-text">Tech Stack</h2>
+                <h2 class="section-title tech-stack-title">
+                    <span class="tech-title-wrapper">
+                        <span class="tech-title-gradient">Tech</span>
+                        <span class="tech-title-outline">Stack</span>
+                    </span>
+                    <div class="tech-title-decoration">
+                        <span class="tech-line"></span>
+                        <span class="tech-dot"></span>
+                        <span class="tech-line"></span>
+                    </div>
+                </h2>
                 <div class="tech-stack-container">
                     <div class="tech-stack-row">
-                        <!-- Full Stack Development - Column 1 -->
-                        <div class="tech-category full-stack">
-                            <div class="tech-category-header">
-                                <div class="tech-header-content">
-                                    <h3>Full Stack Development</h3>
-                                </div>
-                                <div class="">
-                                    <span class="experience-badge">4+ Years</span>
-                                </div>
-                            </div>
-                            <div class="tech-items-wrapper">
-                                <div class="tech-item" data-tech="HTML5">
-                                    <i class="fab fa-html5"></i>
-                                    <div class="tech-item-content">
-                                        <span class="tech-item-title">HTML5</span>
-                                        <span class="tech-item-desc">Markup language untuk struktur dan presentasi konten web</span>
-                                    </div>
-                                </div>
-                                <div class="tech-item" data-tech="CSS3">
-                                    <i class="fab fa-css3-alt"></i>
-                                    <div class="tech-item-content">
-                                        <span class="tech-item-title">CSS3</span>
-                                        <span class="tech-item-desc">Styling dan animasi untuk tampilan web modern</span>
-                                    </div>
-                                </div>
-                                <div class="tech-item" data-tech="JavaScript">
-                                    <i class="fab fa-js"></i>
-                                    <div class="tech-item-content">
-                                        <span class="tech-item-title">JavaScript</span>
-                                        <span class="tech-item-desc">Pemrograman interaktif dan dinamis pada client-side</span>
-                                    </div>
-                                </div>
-                                <div class="tech-item" data-tech="React">
-                                    <i class="fab fa-react"></i>
-                                    <div class="tech-item-content">
-                                        <span class="tech-item-title">React</span>
-                                        <span class="tech-item-desc">Library JS untuk membangun UI yang responsif</span>
-                                    </div>
-                                </div>
-                                <div class="tech-item" data-tech="Node.js">
-                                    <i class="fab fa-node-js"></i>
-                                    <div class="tech-item-content">
-                                        <span class="tech-item-title">Node.js</span>
-                                        <span class="tech-item-desc">Runtime JavaScript untuk backend development</span>
-                                    </div>
-                                </div>
-                                <div class="tech-item" data-tech="PHP">
-                                    <i class="fab fa-php"></i>
-                                    <div class="tech-item-content">
-                                        <span class="tech-item-title">PHP</span>
-                                        <span class="tech-item-desc">Server-side scripting untuk web dinamis</span>
-                                    </div>
-                                </div>
-                                <div class="tech-item" data-tech="Bootstrap">
-                                    <i class="fab fa-bootstrap"></i>
-                                    <div class="tech-item-content">
-                                        <span class="tech-item-title">Bootstrap</span>
-                                        <span class="tech-item-desc">Framework CSS untuk pengembangan web responsif dan modern</span>
-                                    </div>
-                                </div>
-                                <div class="tech-item" data-tech="Tailwind">
-                                    <i class="fab fa-css3"></i> <!-- Gunakan icon CSS karena Tailwind tidak memiliki icon khusus di Font Awesome -->
-                                    <div class="tech-item-content">
-                                        <span class="tech-item-title">Tailwind CSS</span>
-                                        <span class="tech-item-desc">Utility-first CSS framework untuk desain custom dan fleksibel</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Mobile & UI/UX - Column 2 -->
+                        <!-- Website Developer & Mobile Developer -->
                         <div class="tech-category-column">
-                            <!-- Mobile Development -->
+                            <!-- Website Developer -->
                             <div class="tech-category">
                                 <div class="tech-category-header">
                                     <div class="tech-header-content">
-                                        <h3>Mobile Development</h3>
+                                        <h3>Website Developer</h3>
+                                    </div>
+                                    <div class="">
+                                        <span class="experience-badge">4+ Years</span>
+                                    </div>
+                                </div>
+                                <div class="tech-items-wrapper">
+                                    <div class="tech-item" data-tech="HTML5">
+                                        <i class="fab fa-html5"></i>
+                                        <div class="tech-item-content">
+                                            <span class="tech-item-title">HTML5</span>
+                                            <span class="tech-item-desc">Markup language untuk struktur dan presentasi konten web</span>
+                                        </div>
+                                    </div>
+                                    <div class="tech-item" data-tech="CSS3">
+                                        <i class="fab fa-css3-alt"></i>
+                                        <div class="tech-item-content">
+                                            <span class="tech-item-title">CSS3</span>
+                                            <span class="tech-item-desc">Styling dan animasi untuk tampilan web modern</span>
+                                        </div>
+                                    </div>
+                                    <div class="tech-item" data-tech="JavaScript">
+                                        <i class="fab fa-js"></i>
+                                        <div class="tech-item-content">
+                                            <span class="tech-item-title">JavaScript</span>
+                                            <span class="tech-item-desc">Pemrograman interaktif dan dinamis pada client-side</span>
+                                        </div>
+                                    </div>
+                                    <div class="tech-item" data-tech="PHP">
+                                        <i class="fab fa-php"></i>
+                                        <div class="tech-item-content">
+                                            <span class="tech-item-title">PHP</span>
+                                            <span class="tech-item-desc">Server-side scripting untuk web dinamis</span>
+                                        </div>
+                                    </div>
+                                    <div class="tech-item" data-tech="Bootstrap">
+                                        <i class="fab fa-bootstrap"></i>
+                                        <div class="tech-item-content">
+                                            <span class="tech-item-title">Bootstrap</span>
+                                            <span class="tech-item-desc">Framework CSS untuk pengembangan web responsif dan modern</span>
+                                        </div>
+                                    </div>
+                                    <div class="tech-item" data-tech="Tailwind">
+                                        <i class="fab fa-css3"></i> <!-- Gunakan icon CSS karena Tailwind tidak memiliki icon khusus di Font Awesome -->
+                                        <div class="tech-item-content">
+                                            <span class="tech-item-title">Tailwind CSS</span>
+                                            <span class="tech-item-desc">Utility-first CSS framework untuk desain custom dan fleksibel</span>
+                                        </div>
+                                    </div>
+                                    <div class="tech-item" data-tech="Laravel">
+                                        <i class="fab fa-laravel"></i>
+                                        <div class="tech-item-content">
+                                            <span class="tech-item-title">Laravel</span>
+                                            <span class="tech-item-desc">PHP framework untuk pengembangan web modern dan scalable</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="tech-item" data-tech="MySQL">
+                                        <i class="fas fa-database"></i>
+                                        <div class="tech-item-content">
+                                            <span class="tech-item-title">MySQL</span>
+                                            <span class="tech-item-desc">Database management system untuk aplikasi web</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mobile Developer -->
+                            <div class="tech-category">
+                                <div class="tech-category-header">
+                                    <div class="tech-header-content">
+                                        <h3>Mobile Developer</h3>
                                     </div>
                                     <div class="">
                                         <span class="experience-badge">3+ Years</span>
@@ -207,8 +242,11 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <!-- UI/UX Design - New Card -->
+                        <!-- UI/UX Design & Machine Learning -->
+                        <div class="tech-category-column">
+                            <!-- UI/UX Design -->
                             <div class="tech-category">
                                 <div class="tech-category-header">
                                     <div class="tech-header-content">
@@ -226,11 +264,11 @@
                                             <span class="tech-item-desc">Design, prototyping, dan kolaborasi UI/UX</span>
                                         </div>
                                     </div>
-                                    <div class="tech-item" data-tech="Adobe XD">
+                                    <div class="tech-item" data-tech="Canva">
                                         <i class="fab fa-creative-commons"></i> <!-- Ganti dengan icon yang tersedia -->
                                         <div class="tech-item-content">
-                                            <span class="tech-item-title">Adobe XD</span>
-                                            <span class="tech-item-desc">Desain interface dan prototype interaktif</span>
+                                            <span class="tech-item-title">Canva</span>
+                                            <span class="tech-item-desc">Desain grafis untuk materi promosi, presentasi, dan media sosial.</span>
                                         </div>
                                     </div>
                                     <div class="tech-item" data-tech="Prototyping">
@@ -249,152 +287,167 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Machine Learning -->
+                            <div class="tech-category">
+                                <div class="tech-category-header">
+                                    <div class="tech-header-content">
+                                        <h3>Machine Learning Engineer</h3>
+                                    </div>
+                                    <div class="">
+                                        <span class="experience-badge">2+ Years</span>
+                                    </div>
+                                </div>
+                                <div class="tech-items-wrapper">
+                                    <div class="tech-item" data-tech="Python">
+                                        <i class="fab fa-python"></i>
+                                        <div class="tech-item-content">
+                                            <span class="tech-item-title">Python</span>
+                                            <span class="tech-item-desc">Bahasa utama untuk pengembangan model ML</span>
+                                        </div>
+                                    </div>
+                                    <div class="tech-item" data-tech="Flask">
+                                        <i class="fas fa-server"></i>
+                                        <div class="tech-item-content">
+                                            <span class="tech-item-title">Flask</span>
+                                            <span class="tech-item-desc">Framework Python untuk deploy model ML</span>
+                                        </div>
+                                    </div>
+                                    <div class="tech-item" data-tech="SVC">
+                                        <i class="fas fa-brain"></i>
+                                        <div class="tech-item-content">
+                                            <span class="tech-item-title">SVC Model</span>
+                                            <span class="tech-item-desc">Prediksi suhu dan kelembaban menggunakan Support Vector Classifier</span>
+                                        </div>
+                                    </div>
+                                    <div class="tech-item" data-tech="ML-Algorithms">
+                                        <i class="fas fa-microchip"></i>
+                                        <div class="tech-item-content">
+                                            <span class="tech-item-title">ML Algorithms</span>
+                                            <span class="tech-item-desc">KNN, Neural Networks, dan optimisasi parameter</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <!-- Divider Wave -->
+                <div class="wave-divider">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                    </svg>
                 </div>
             </div>
         </section>
 
         <!-- Proyek -->
-        <section id="projects" class="section-padding">
+        <section id="projects" class="section-padding projects-elegant-curve">
             <div class="section-header">
-                <h2 class="animated-text text-center">Proyek Terbaru</h2>
-                <div class="project-filters">
-                    <button class="filter-btn active" data-filter="all">Semua</button>
-                    <button class="filter-btn" data-filter="web">Web</button>
-                    <button class="filter-btn" data-filter="mobile">Mobile</button>
-                    <button class="filter-btn" data-filter="design">Design</button>
-                </div>
+                <h2 class="animated-text text-center">Pengalaman Proyek</h2>
             </div>
             
             <div id="projects-horizontal" class="projects-container">
+                <!-- Website RefreshOil -->
                 <div class="project-item-wrapper" data-category="web">
                     <div class="project-card glass-card">
                         <div class="project-item" data-intensity="0.2">
                             <div class="project-images">
-                                <img src="https://images.unsplash.com/photo-1559028006-44a3a2f20975?q=80&w=600&h=800&auto=format&fit=crop" 
-                                     alt="Proyek Desain Web 1">
-                                <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=600&h=800&auto=format&fit=crop" 
-                                     alt="Proyek Desain Web 2" class="hover-image">
+                                <img src="assets/img/porto1.png" alt="RefreshOil Website">
                             </div>
                             <div class="project-overlay">
                                 <div class="project-info">
-                                    <h3 class="project-title">Proyek Desain Web</h3>
-                                    <p class="project-tech">UI/UX, Frontend, GSAP</p>
+                                    <h3 class="project-title">RefreshOil - Web Platform</h3>
+                                    <div class="project-roles">
+                                        <span class="role-badge">UI/UX Designer</span>
+                                        <span class="role-badge">Full Stack Developer</span>
+                                    </div>
+                                    <div class="project-description">
+                                        <p>Platform distribusi minyak jelantah dengan fitur tracking dan manajemen pengguna</p>
+                                    </div>
+                                    <div class="project-tech-stack">
+                                        <span class="tech-badge">Laravel</span>
+                                        <span class="tech-badge">MySQL</span>
+                                        <span class="tech-badge">REST API</span>
+                                        <span class="tech-badge">Figma</span>
+                                    </div>
                                     <div class="project-links">
                                         <a href="#" class="project-link">
                                             <i class="fas fa-link"></i>
                                             <span>Live Demo</span>
                                         </a>
-                                        <a href="#" class="project-link">
-                                            <i class="fab fa-github"></i>
-                                            <span>Source Code</span>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="project-tags">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">GSAP</span>
-                        </div>
                     </div>
                 </div>
+
+                <!-- Mobile RefreshOil -->
                 <div class="project-item-wrapper" data-category="mobile">
                     <div class="project-card glass-card">
                         <div class="project-item" data-intensity="0.2">
                             <div class="project-images">
-                                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=600&h=800&auto=format&fit=crop" 
-                                     alt="Proyek Aplikasi Mobile 1">
-                                <img src="https://images.unsplash.com/photo-1580999933938-20d3a4d08484?q=80&w=600&h=800&auto=format&fit=crop" 
-                                     alt="Proyek Aplikasi Mobile 2" class="hover-image">
+                                <img src="assets/img/porto2.png" alt="RefreshOil Mobile">
                             </div>
                             <div class="project-overlay">
                                 <div class="project-info">
-                                    <h3 class="project-title">Aplikasi Mobile</h3>
-                                    <p class="project-tech">React Native, Firebase</p>
+                                    <h3 class="project-title">RefreshOil - Mobile App</h3>
+                                    <div class="project-roles">
+                                        <span class="role-badge">Flutter Developer</span>
+                                    </div>
+                                    <div class="project-description">
+                                        <p>Aplikasi mobile untuk memudahkan pengguna dalam mengelola transaksi minyak jelantah</p>
+                                    </div>
+                                    <div class="project-tech-stack">
+                                        <span class="tech-badge">Flutter</span>
+                                        <span class="tech-badge">Dart</span>
+                                        <span class="tech-badge">REST API</span>
+                                        <span class="tech-badge">Firebase</span>
+                                    </div>
                                     <div class="project-links">
                                         <a href="#" class="project-link">
                                             <i class="fas fa-link"></i>
                                             <span>Live Demo</span>
                                         </a>
-                                        <a href="#" class="project-link">
-                                            <i class="fab fa-github"></i>
-                                            <span>Source Code</span>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="project-tags">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">Firebase</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-item-wrapper" data-category="design">
+
+                <!-- Weather Prediction ML -->
+                <div class="project-item-wrapper" data-category="ml">
                     <div class="project-card glass-card">
                         <div class="project-item" data-intensity="0.2">
                             <div class="project-images">
-                                <img src="https://images.unsplash.com/photo-1557825835-b4527f242af7?q=80&w=600&h=800&auto=format&fit=crop" 
-                                     alt="Proyek Branding 1">
-                                <img src="https://images.unsplash.com/photo-1611140339103-3fc53833cb4a?q=80&w=600&h=800&auto=format&fit=crop" 
-                                     alt="Proyek Branding 2" class="hover-image">
+                                <img src="assets/img/porto3.png" alt="Weather Prediction">
                             </div>
                             <div class="project-overlay">
                                 <div class="project-info">
-                                    <h3 class="project-title">Identitas Branding</h3>
-                                    <p class="project-tech">Desain Grafis, Ilustrasi</p>
+                                    <h3 class="project-title">Weather Prediction ML</h3>
+                                    <div class="project-roles">
+                                        <span class="role-badge">Machine Learning Engineer</span>
+                                    </div>
+                                    <div class="project-description">
+                                        <p>Sistem prediksi cuaca menggunakan berbagai algoritma machine learning</p>
+                                    </div>
+                                    <div class="project-tech-stack">
+                                        <span class="tech-badge">Python</span>
+                                        <span class="tech-badge">SVC</span>
+                                        <span class="tech-badge">KNN</span>
+                                        <span class="tech-badge">Neural Networks</span>
+                                    </div>
                                     <div class="project-links">
                                         <a href="#" class="project-link">
                                             <i class="fas fa-link"></i>
                                             <span>Live Demo</span>
                                         </a>
-                                        <a href="#" class="project-link">
-                                            <i class="fab fa-github"></i>
-                                            <span>Source Code</span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="project-tags">
-                            <span class="tech-tag">Desain Grafis</span>
-                            <span class="tech-tag">Ilustrasi</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-item-wrapper" data-category="ecommerce">
-                    <div class="project-card glass-card">
-                        <div class="project-item" data-intensity="0.2">
-                            <div class="project-images">
-                                <img src="https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?q=80&w=600&h=800&auto=format&fit=crop" 
-                                     alt="Proyek E-commerce 1">
-                                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=600&h=800&auto=format&fit=crop" 
-                                     alt="Proyek E-commerce 2" class="hover-image">
-                            </div>
-                            <div class="project-overlay">
-                                <div class="project-info">
-                                    <h3 class="project-title">Toko E-commerce</h3>
-                                    <p class="project-tech">Shopify, Liquid, SEO</p>
-                                    <div class="project-links">
-                                        <a href="#" class="project-link">
-                                            <i class="fas fa-link"></i>
-                                            <span>Live Demo</span>
-                                        </a>
-                                        <a href="#" class="project-link">
-                                            <i class="fab fa-github"></i>
-                                            <span>Source Code</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-tags">
-                            <span class="tech-tag">Shopify</span>
-                            <span class="tech-tag">Liquid</span>
-                            <span class="tech-tag">SEO</span>
                         </div>
                     </div>
                 </div>
@@ -499,92 +552,96 @@
                 </div>
             </div>
         </section>
-    </main>
 
-    <!-- Footer -->
-    <footer id="main-footer" class="section-padding">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="footer-brand">
-                            <h3 class="gradient-text">Portofolio.</h3>
-                            <p>Menciptakan solusi digital yang inovatif dan menginspirasi.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <h4>Navigasi</h4>
-                        <ul class="footer-links">
-                            <li><a href="#hero">Home</a></li>
-                            <li><a href="#about">Tech Stack</a></li>
-                            <li><a href="#projects">Proyek</a></li>
-                            <li><a href="#contact">Kontak</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
-                        <h4>Layanan</h4>
-                        <ul class="footer-links">
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">UI/UX Design</a></li>
-                            <li><a href="#">Mobile Apps</a></li>
-                            <li><a href="#">Konsultasi</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
-                        <h4>Newsletter</h4>
-                        <p>Berlangganan untuk mendapatkan update terbaru</p>
-                        <form class="footer-newsletter">
-                            <div class="input-group">
-                                <input type="email" class="form-control glass" placeholder="Email Anda">
-                                <button class="btn btn-primary" type="submit">
-                                    <i class="fas fa-arrow-right"></i>
-                                </button>
+        <!-- Footer -->
+        <footer id="main-footer" class="section-padding">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="footer-brand">
+                                <h3 class="gradient-text">Portofolio.</h3>
+                                <p>Menciptakan solusi digital yang inovatif dan menginspirasi.</p>
                             </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <p class="copyright">© 2025 Aufa Dzakiy. All rights reserved.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="footer-social">
-                            <a href="#" class="social-btn" data-tooltip="Twitter">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="social-btn" data-tooltip="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="social-btn" data-tooltip="LinkedIn">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" class="social-btn" data-tooltip="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
+                        </div>
+                        <div class="col-lg-2">
+                            <h4>Navigasi</h4>
+                            <ul class="footer-links">
+                                <li><a href="#hero">Home</a></li>
+                                <li><a href="#about">Skill</a></li>
+                                <li><a href="#projects">Proyek</a></li>
+                                <li><a href="#contact">Kontak</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <h4>Layanan</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">Web Development</a></li>
+                                <li><a href="#">UI/UX Design</a></li>
+                                <li><a href="#">Mobile Apps</a></li>
+                                <li><a href="#">Konsultasi</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <h4>Newsletter</h4>
+                            <p>Berlangganan untuk mendapatkan update terbaru</p>
+                            <form class="footer-newsletter">
+                                <div class="input-group">
+                                    <input type="email" class="form-control glass" placeholder="Email Anda">
+                                    <button class="btn btn-primary" type="submit">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+            
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <p class="copyright">© 2025 Aufa Dzakiy. All rights reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="footer-social">
+                                <a href="#" class="social-btn" data-tooltip="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-btn" data-tooltip="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="social-btn" data-tooltip="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-btn" data-tooltip="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="btn-back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/6283872839074" class="btn-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
 
-    <!-- Script JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/hover-effect@1.1.0/dist/hover-effect.umd.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script type="module" src="js/main.js"></script>
-</body>
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <!-- Script JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/hover-effect@1.1.0/dist/hover-effect.umd.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script type="module" src="js/main.js"></script>
+    </body>
 </html>
