@@ -174,3 +174,88 @@ function createSparkle() {
 }
 
 setInterval(createSparkle, 300);
+
+// Add this to your main.js file
+document.addEventListener('DOMContentLoaded', function() {
+  // Reference all modern cards
+  const modernCards = document.querySelectorAll('.modern-card');
+  
+  // Enhanced hover effects
+  modernCards.forEach(card => {
+    // Mouse tracking for shine effect positioning
+    card.addEventListener('mousemove', function(e) {
+      const { left, top, width, height } = card.getBoundingClientRect();
+      const x = e.clientX - left;
+      const y = e.clientY - top;
+      
+      // Calculate percentages
+      const xPercent = Math.floor((x / width) * 100);
+      const yPercent = Math.floor((y / height) * 100);
+      
+      // Update custom properties for dynamic effects
+      card.style.setProperty('--x-position', `${xPercent}%`);
+      card.style.setProperty('--y-position', `${yPercent}%`);
+      
+      // Move decorative shapes slightly based on cursor position
+      const shapes = card.querySelectorAll('.decoration-shape');
+      shapes.forEach((shape, index) => {
+        const factor = index * 0.03 + 0.02;
+        const xMove = (xPercent - 50) * factor;
+        const yMove = (yPercent - 50) * factor;
+        
+        shape.style.transform = `translate(${xMove}px, ${yMove}px) scale(${index === 0 ? 1.2 : 1})`;
+      });
+    });
+    
+    // Reset on mouse leave
+    card.addEventListener('mouseleave', function() {
+      const shapes = card.querySelectorAll('.decoration-shape');
+      shapes.forEach(shape => {
+        shape.style.transform = '';
+      });
+    });
+    
+    // Add subtle bounce effect on thumbnail images
+    const thumbnail = card.querySelector('.card-thumbnail img');
+    if (thumbnail) {
+      card.addEventListener('mouseenter', function() {
+        thumbnail.style.transform = 'scale(1.05)';
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        thumbnail.style.transform = 'scale(1)';
+      });
+    }
+  });
+  
+  // Animate tech chips on hover of any chip
+  const techChips = document.querySelectorAll('.tech-chip');
+  techChips.forEach(chip => {
+    chip.addEventListener('mouseenter', function() {
+      const parentCard = this.closest('.modern-card');
+      const allChips = parentCard.querySelectorAll('.tech-chip');
+      
+      // Add slight delay to each chip
+      allChips.forEach((otherChip, index) => {
+        setTimeout(() => {
+          if (otherChip !== this) {
+            otherChip.style.transform = 'translateY(-2px)';
+            otherChip.style.opacity = '0.7';
+          }
+        }, index * 50);
+      });
+    });
+    
+    chip.addEventListener('mouseleave', function() {
+      const parentCard = this.closest('.modern-card');
+      const allChips = parentCard.querySelectorAll('.tech-chip');
+      
+      allChips.forEach(otherChip => {
+        if (otherChip !== this) {
+          otherChip.style.transform = '';
+          otherChip.style.opacity = '';
+        }
+      });
+    });
+  });
+});

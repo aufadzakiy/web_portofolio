@@ -18,6 +18,7 @@
 
     <!-- Link ke CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
@@ -387,104 +388,172 @@
             <div id="projects-horizontal" class="projects-container">
                 <!-- Website RefreshOil -->
                 <div class="project-item-wrapper" data-category="web">
-                    <div class="project-card glass-card">
-                        <div class="project-item" data-intensity="0.2">
-                            <div class="project-images">
-                                <img src="assets/img/porto1.png" alt="RefreshOil Website">
-                            </div>
-                            <div class="project-overlay">
-                                <div class="project-info">
-                                    <h3 class="project-title">RefreshOil - Web Platform</h3>
-                                    <div class="project-roles">
-                                        <span class="role-badge">UI/UX Designer</span>
-                                        <span class="role-badge">Full Stack Developer</span>
-                                    </div>
-                                    <div class="project-description">
-                                        <p>Platform distribusi minyak jelantah dengan fitur tracking dan manajemen pengguna</p>
-                                    </div>
-                                    <div class="project-tech-stack">
-                                        <span class="tech-badge">Laravel</span>
-                                        <span class="tech-badge">MySQL</span>
-                                        <span class="tech-badge">REST API</span>
-                                        <span class="tech-badge">Figma</span>
-                                    </div>
-                                    <div class="project-links">
-                                        <a href="#" class="project-link">
-                                            <i class="fas fa-link"></i>
-                                            <span>Live Demo</span>
-                                        </a>
-                                    </div>
+                    <div class="modern-card">
+                        <!-- Card Thumbnail -->
+                        <div class="card-thumbnail">
+                            <img src="assets/img/porto1.png" alt="RefreshOil Website">
+                            <div class="thumbnail-overlay"></div>
+                            <div class="card-category">Web Platform</div>
+                        </div>
+                        
+                        <!-- Card Content -->
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3 class="card-title">RefreshOil</h3>
+                                <div class="card-roles">
+                                    <span class="role-chip">UI/UX Designer</span>
+                                    <span class="role-chip">Full Stack Dev</span>
                                 </div>
                             </div>
+                            
+                            <p class="card-description">Platform distribusi minyak jelantah dengan fitur tracking dan manajemen pengguna</p>
+                            
+                            <div class="card-tech-stack">
+                                <div class="tech-chip">
+                                    <i class="fab fa-laravel"></i>
+                                    <span>Laravel</span>
+                                </div>
+                                <div class="tech-chip">
+                                    <i class="fas fa-database"></i>
+                                    <span>MySQL</span>
+                                </div>
+                                <div class="tech-chip">
+                                    <i class="fas fa-exchange-alt"></i>
+                                    <span>API</span>
+                                </div>
+                                <div class="tech-chip">
+                                    <i class="fab fa-figma"></i>
+                                    <span>Figma</span>
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="card-link">
+                                <span>View Project</span>
+                                <svg viewBox="0 0 24 24" class="card-link-arrow">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        
+                        <!-- Decorative Elements -->
+                        <div class="card-decoration">
+                            <div class="decoration-shape shape-1"></div>
+                            <div class="decoration-shape shape-2"></div>
+                            <div class="decoration-shape shape-3"></div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Mobile RefreshOil -->
                 <div class="project-item-wrapper" data-category="mobile">
-                    <div class="project-card glass-card">
-                        <div class="project-item" data-intensity="0.2">
-                            <div class="project-images">
-                                <img src="assets/img/porto2.png" alt="RefreshOil Mobile">
-                            </div>
-                            <div class="project-overlay">
-                                <div class="project-info">
-                                    <h3 class="project-title">RefreshOil - Mobile App</h3>
-                                    <div class="project-roles">
-                                        <span class="role-badge">Flutter Developer</span>
-                                    </div>
-                                    <div class="project-description">
-                                        <p>Aplikasi mobile untuk memudahkan pengguna dalam mengelola transaksi minyak jelantah</p>
-                                    </div>
-                                    <div class="project-tech-stack">
-                                        <span class="tech-badge">Flutter</span>
-                                        <span class="tech-badge">Dart</span>
-                                        <span class="tech-badge">REST API</span>
-                                        <span class="tech-badge">Firebase</span>
-                                    </div>
-                                    <div class="project-links">
-                                        <a href="#" class="project-link">
-                                            <i class="fas fa-link"></i>
-                                            <span>Live Demo</span>
-                                        </a>
-                                    </div>
+                    <div class="modern-card">
+                        <!-- Card Thumbnail -->
+                        <div class="card-thumbnail">
+                            <img src="assets/img/porto2.png" alt="RefreshOil Mobile">
+                            <div class="thumbnail-overlay"></div>
+                            <div class="card-category">Mobile App</div>
+                        </div>
+                        
+                        <!-- Card Content -->
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3 class="card-title">RefreshOil Mobile</h3>
+                                <div class="card-roles">
+                                    <span class="role-chip">Flutter Developer</span>
                                 </div>
                             </div>
+                            
+                            <p class="card-description">Aplikasi mobile untuk memudahkan pengguna dalam mengelola transaksi minyak jelantah</p>
+                            
+                            <div class="card-tech-stack">
+                                <div class="tech-chip">
+                                    <i class="fab fa-flutter"></i>
+                                    <span>Flutter</span>
+                                </div>
+                                <div class="tech-chip">
+                                    <i class="fas fa-code"></i>
+                                    <span>Dart</span>
+                                </div>
+                                <div class="tech-chip">
+                                    <i class="fas fa-exchange-alt"></i>
+                                    <span>API</span>
+                                </div>
+                                <div class="tech-chip">
+                                    <i class="fas fa-fire"></i>
+                                    <span>Firebase</span>
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="card-link">
+                                <span>View Project</span>
+                                <svg viewBox="0 0 24 24" class="card-link-arrow">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        
+                        <!-- Decorative Elements -->
+                        <div class="card-decoration">
+                            <div class="decoration-shape shape-1"></div>
+                            <div class="decoration-shape shape-2"></div>
+                            <div class="decoration-shape shape-3"></div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Weather Prediction ML -->
                 <div class="project-item-wrapper" data-category="ml">
-                    <div class="project-card glass-card">
-                        <div class="project-item" data-intensity="0.2">
-                            <div class="project-images">
-                                <img src="assets/img/porto3.png" alt="Weather Prediction">
-                            </div>
-                            <div class="project-overlay">
-                                <div class="project-info">
-                                    <h3 class="project-title">Weather Prediction ML</h3>
-                                    <div class="project-roles">
-                                        <span class="role-badge">Machine Learning Engineer</span>
-                                    </div>
-                                    <div class="project-description">
-                                        <p>Sistem prediksi cuaca menggunakan berbagai algoritma machine learning</p>
-                                    </div>
-                                    <div class="project-tech-stack">
-                                        <span class="tech-badge">Python</span>
-                                        <span class="tech-badge">SVC</span>
-                                        <span class="tech-badge">KNN</span>
-                                        <span class="tech-badge">Neural Networks</span>
-                                    </div>
-                                    <div class="project-links">
-                                        <a href="#" class="project-link">
-                                            <i class="fas fa-link"></i>
-                                            <span>Live Demo</span>
-                                        </a>
-                                        </a>
-                                    </div>
+                    <div class="modern-card">
+                        <!-- Card Thumbnail -->
+                        <div class="card-thumbnail">
+                            <img src="assets/img/porto3.png" alt="Weather Prediction">
+                            <div class="thumbnail-overlay"></div>
+                            <div class="card-category">ML System</div>
+                        </div>
+                        
+                        <!-- Card Content -->
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3 class="card-title">Weather Prediction</h3>
+                                <div class="card-roles">
+                                    <span class="role-chip">Machine Learning Engineer</span>
                                 </div>
                             </div>
+                            
+                            <p class="card-description">Sistem prediksi cuaca menggunakan berbagai algoritma machine learning</p>
+                            
+                            <div class="card-tech-stack">
+                                <div class="tech-chip">
+                                    <i class="fab fa-python"></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="tech-chip">
+                                    <i class="fas fa-brain"></i>
+                                    <span>SVC</span>
+                                </div>
+                                <div class="tech-chip">
+                                    <i class="fas fa-project-diagram"></i>
+                                    <span>KNN</span>
+                                </div>
+                                <div class="tech-chip">
+                                    <i class="fas fa-microchip"></i>
+                                    <span>Neural Networks</span>
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="card-link">
+                                <span>View Project</span>
+                                <svg viewBox="0 0 24 24" class="card-link-arrow">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        
+                        <!-- Decorative Elements -->
+                        <div class="card-decoration">
+                            <div class="decoration-shape shape-1"></div>
+                            <div class="decoration-shape shape-2"></div>
+                            <div class="decoration-shape shape-3"></div>
                         </div>
                     </div>
                 </div>
